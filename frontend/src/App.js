@@ -6,7 +6,7 @@ function App() {
   const [Age,SetAge]=useState("Number");
   //https://flaskapp-backend.vercel.app
   useEffect(()=>{
-   fetch('/',{
+   fetch('http://127.0.0.1:5000/',{
       method:'GET'
     }
   ).then((res) => {
