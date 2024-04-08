@@ -5,9 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import resumeimg from '../Asset/resume.jpg';
-import Uploadfile from '../Uploadfile/Uploadfile';
 import { LoadingBar } from '../LoadingBar/LoadingBar';
-import { Uploadfiledemo } from '../Uploadfiledemo/Uploadfiledemo';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css';
