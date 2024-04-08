@@ -1,0 +1,46 @@
+.topcontent__uploadbutton 
+{
+    color: black;
+    background-color: rgb(136, 245, 255);
+    font-size: 14.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 300;
+    cursor: pointer;
+    outline-style: dashed;
+    border-radius: 5px;
+    font-family: "Montserrat",sans-serif;
+}
+.topcontent__workbutton
+{
+    font-family: "Montserrat",sans-serif;
+    color:black;
+    background-color:transparent;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: 300;
+    border: 1px solid white !important;
+    cursor: pointer;
+}
+.topcontent__uploadbutton:hover 
+{
+    outline-style:dotted;
+    transition-timing-function:ease-in-out;
+    transition-duration:0.85s;
+    opacity: 0.5;
+    transform: scale(0.85);
+}
+.topcontent__workbutton:hover
+{
+    background-color: lightblue;
+    outline-style: dashed;
+}
+.topcontent__workbutton:hover
+{
+    background-color: lightcoral;
+    color: black;
+    opacity: 0.5;
+}
+p {
+    margin: 5px 5px;
+}

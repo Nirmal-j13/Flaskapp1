@@ -1,0 +1,118 @@
+.signup-bg 
+{
+    display: flex;
+    min-height:100vh;
+    border-radius: 5px;
+    margin: 75px 75px 75px 75px;
+}
+.signup-splitleft 
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   width: 50%;
+   opacity: 0.5;
+   background-color:lightblue;
+}
+.signup-1
+{
+    letter-spacing: 2px;
+    color: darkblue;
+    font-weight: 650;
+}
+.signup-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+}
+.signup-img 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.signup-splitright
+{
+   border-radius: 5px;
+   width: 50%;
+   background-color:aliceblue;
+   padding-left: 10px;
+   padding-right: 10px;
+   opacity: 0.9;
+}
+.signup-form
+{   
+ display: flex;
+ flex-direction: column;
+ line-height: 35px;
+}
+input 
+{
+    border-radius: 2px;
+    padding-left: 5px;
+    font-size: medium;
+    font-size: 15px;
+    width: 100%;
+}
+input:focus
+{
+    box-shadow: rgb(0, 33, 44) 0px 2px 15px;
+}
+.signup-link
+{
+   margin-left: 20px;
+   margin-right: 20px;
+   outline-style:dashed;
+   outline-color: black;
+   transition-duration:0.85s;
+   transform: scale(1.05);
+   transition-timing-function:ease-in-out;
+   background-color:rgb(0, 42, 46); 
+   color: aliceblue;
+   opacity: 0.5;
+   border-radius: 3px;
+   letter-spacing: 1px;
+   font-size: 13px;
+   cursor: pointer;
+}
+.signup-link:hover
+{
+    outline-style:dotted;
+    transition-timing-function:ease-in-out;
+    transition-duration:0.85s;
+    opacity: 0.6;
+    transform: scale(0.85);
+}
+button 
+{
+    margin-top: 30px;
+    margin-left: 4px;
+}
+h2{
+    margin-top: 10px;
+}
+.signup-toast 
+{
+    height: 10px;
+    width: 10px;
+    background-color: black;
+}
+.signin-fp 
+{
+    font-size: small;
+}
+.signin-fp:hover 
+{
+    font-size: small;
+    cursor: pointer;
+}
+p:hover
+{
+    cursor: pointer;
+}

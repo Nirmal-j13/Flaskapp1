@@ -1,30 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import react, { useEffect, useState } from 'react';
+import { Login } from './Components/Login/Login';
+import { Navbar } from './Components/Navbar/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Register } from './Components/Register/Register';
+import { Applicant } from './Components/Applicant/Applicant';
 function App() {
-  const [Name,SetName]=useState("Null");
-  const [Age,SetAge]=useState("Number");
-  //https://flaskapp-backend.vercel.app
-  useEffect(()=>{
-   fetch('https://flaskappbackend.vercel.app/',{
-      method:'GET'
-    }
-  ).then((res) => {
-     console.log(res.json()
-     .then((data)=>
-     {
-      console.log(data);
-      SetName(data.Name);
-      SetAge(data.Age)
-     }
-  ))})
-  },[]);
+  
   return (
-    <div className="App">
-        <p>{Name}</p>
-        <p>{Age}</p>
-        <p>Hello {Name}</p>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Navbar/>}/>
+          <Route path='/signin' element={<Login/>}/>
+          <Route path='/signup' element={<Register/>}/>
+          <Route path='/signin/:id' element={<Applicant/>}/>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

@@ -1,0 +1,223 @@
+.Navbar-bg 
+{
+    display: flex;
+    min-height: 10vh;
+    background-color: lightblue;
+    position: sticky;
+    z-index: 2000;
+    box-shadow:0px 5px 16px 4px rgb(141, 255, 249);
+}
+.Navbar-left
+{
+    display: flex;
+    flex: 0.80;
+    align-items: center;
+    letter-spacing: 5px;
+    padding: 0 10px;
+    opacity: 0.5;
+    color: darkblue;
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+.Navbar-logo 
+{
+    font-size:1.75rem;
+    color: rgb(0, 50, 74);
+    opacity: 0.5;
+    border-radius: 5px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    box-shadow:0px 6px 12px 0px rgb(16, 18, 17);
+}
+.Navbar-right 
+{
+    display: flex;
+    flex: 0.20;
+    align-items: center;
+    gap: 3rem;
+    letter-spacing: 1px;
+}
+.Navbar-link:hover
+{
+   outline-style:dashed;
+   outline-color: black;
+   transition-duration:0.85s;
+   transform: scale(1.05);
+   transition-timing-function:ease-in-out;
+   background-color:rgb(0, 42, 46); 
+   color: aliceblue;
+   opacity: 0.5;
+   padding: 5px 20px;
+   border-radius: 3px;
+   letter-spacing: 1px;
+   font-size: 13px;
+   cursor: pointer;
+
+   outline-style:dotted;
+    transition-timing-function:ease-in-out;
+    transition-duration:0.85s;
+    opacity: 0.6;
+    transform: scale(0.85);
+}
+.applicant
+{
+    display: flex;
+    min-height: 75vh;
+    margin: 10px 10px;
+}
+.applicant-left 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.6;
+    background-color:white;
+    width: 50%;
+    flex-direction: column;
+}
+.applicant-right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.4;
+    background-color: aquamarine;
+    width: 50%;
+}
+.topcontent__button 
+{
+    color: black;
+    background-color: lightblue;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+}
+.topcontent__button:hover 
+{
+    opacity: 0.5;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.topcontent
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: black;
+    flex: 0.4;
+    line-height: 50px;
+    background-color: aliceblue}
+.topcontent__container > h2 
+{
+    letter-spacing: 2px;
+} 
+.topcontent__container > h1 
+{
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 3px;
+    padding-top: 20px;
+}
+.topcontent__container > a > button 
+{
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.topcontent__container > h1 
+{
+    font-size:50px ;
+    font-family: "Montserrat",sans-serif;
+}
+.topcontent__button 
+{
+    color: black;
+    background-color: lightblue;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+}
+.topcontent__workbutton
+{
+    font-family: "Montserrat",sans-serif;
+    color:black;
+    background-color:transparent;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: 300;
+    border: 1px solid white !important;
+    cursor: pointer;
+}
+.topcontent__uploadbutton:hover 
+{
+    opacity: 0.5;
+}
+.topcontent__workbutton:hover
+{
+    background-color: rgb(19, 68, 84);
+    outline-style: dashed;
+}
+.topcontent__workbutton:hover
+{
+    background-color: lightcoral;
+    color: black;
+    opacity: 0.5;
+}
+.applicant-circularbar 
+{
+    height: 150px;
+    width: 200px;
+    
+
+}
+.applicant-resume 
+{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    min-width: 100px;
+    line-height: 15px;
+}
+.resume
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    min-width: 100px;
+    outline-style: dashed;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    box-shadow:0px 5px 16px 4px rgb(141, 255, 249);
+}
+.resume-h1 
+{
+    font-size: 13px;
+}
+.resume-pred 
+{
+    padding-left:2px ;
+}
+.applicant-text 
+{
+    font-size: 14px;
+    color: rgb(5, 84, 110);
+}
+.hello 
+{
+    color: rgb(28, 58, 68);
+}
+.ResumeStrength 
+{
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(32, 62, 90);
+}

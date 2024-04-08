@@ -1,0 +1,116 @@
+.Navbar-bg 
+{
+    display: flex;
+    min-height: 12vh;
+    background-color: lightblue;
+    position: sticky;
+    z-index: 2000;
+    box-shadow:0px 5px 16px 4px rgb(141, 255, 249);
+}
+.Navbar-left
+{
+    display: flex;
+    flex: 0.4;
+    align-items: center;
+    letter-spacing: 5px;
+    padding: 0 10px;
+    
+    color: rgb(6, 51, 66);
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+.Navbar-logo 
+{
+    font-size:1.75rem;
+    color: rgb(0, 50, 74);
+    opacity: 0.5;
+    border-radius: 5px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    box-shadow:0px 6px 12px 0px rgb(16, 18, 17);
+}
+.Navbar-right 
+{
+    display: flex;
+    flex: 0.6;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 1px;
+}
+.Navbar-link:hover
+{
+   outline-style:dashed;
+   outline-color: black;
+   transition-duration:0.85s;
+   transform: scale(1.05);
+   transition-timing-function:ease-in-out;
+   background-color:rgb(0, 42, 46); 
+   color: aliceblue;
+   opacity: 0.5;
+   padding: 5px 20px;
+   border-radius: 3px;
+   letter-spacing: 1px;
+   font-size: 13px;
+   cursor: pointer;
+
+   outline-style:dotted;
+    transition-timing-function:ease-in-out;
+    transition-duration:0.85s;
+    opacity: 0.6;
+    transform: scale(0.85);
+}
+.home-bg 
+{
+    min-height: 100vh;
+    display: flex;
+}
+.home-left 
+{
+    width: 50%;
+    margin-left: 60px;
+    margin-top: 100px;
+    line-height: 60px;
+    flex: 0.5;
+}
+.home-heading
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(6, 51, 66);
+}
+.home-heading-1
+{
+    font-weight: 500;
+    color: rgb(5, 84, 110);
+}
+.home-right 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:0.5;
+}
+.home-heading-1
+{
+    font-weight: 500;
+    color: rgb(5, 84, 110);
+}
+.home-heading-2 
+{
+    line-height: 29px;
+    color: rgb(1, 69, 92);
+}
+.Bar-Chart 
+{
+    margin-top: 50px;
+}
+.Resume-Skill-Category
+{
+    margin-left: 60px;
+}
+.p-Resume-Skill-Category
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(6, 51, 66);
+}

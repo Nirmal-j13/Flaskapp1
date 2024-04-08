@@ -1,0 +1,21 @@
+ob Title: Full Stack Developer/Data Scientist
+
+Company Name: [Company Name]
+
+Location: [Location]
+
+Job Type: Full-time
+
+Job Description:
+
+[Company Name] is seeking a highly skilled and motivated Full Stack Developer/Data Scientist to join our dynamic team. The ideal candidate will have a strong background in Java, JavaScript, Python, C++, C#, React.js, Node.js, Express.js, MongoDB, MySQL, Spring Boot, Data Science, and Data Analysis. If you're passionate about leveraging technology to solve complex problems and thrive in a collaborative environment, we want to hear from you.
+
+Key Responsibilities:
+
+Design, develop, and deploy scalable web applications using Java, JavaScript, Python, C++, C#, React.js, Node.js, Express.js, MongoDB, MySQL, and Spring Boot.
+Implement data science techniques to extract insights from large datasets and drive informed decision-making.
+Collaborate with cross-functional teams to gather requirements, architect solutions, and deliver high-quality software products.
+Conduct thorough data analysis, including data cleansing, preprocessing, modeling, and visualization.
+Utilize machine learning algorithms and statistical methods to develop predictive models and optimize business processes.
+Stay updated on emerging technologies and industry trends to continuously improve development processes and methodologies.
+Troubleshoot and debug issues to ensure optimal performance and reliability of applications and data pipelines.
