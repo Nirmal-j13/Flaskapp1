@@ -358,7 +358,7 @@ def RegisterPage():
             "Password":password,
             "Confirmpassword":confirmpassword
             }
-@app.route('/login',methods=['POST'])
+@app.route('https://flaskappbackend.vercel.app/login',methods=['POST'])
 def LoginPage():
     if request.method=='POST':
         data=request.json
