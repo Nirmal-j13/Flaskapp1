@@ -19,7 +19,7 @@ export const Login = () => {
       e.preventDefault();
       try
       {
-      await fetch(`${deployurl}/login`,{
+      await fetch(`https://flaskappbackend.vercel.app/login`,{
           method:"POST",
           body:JSON.stringify({
             EmailId:email,
