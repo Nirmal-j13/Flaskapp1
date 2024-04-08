@@ -4,6 +4,7 @@ import logo from '../Asset/logo.png'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import { deployurl } from '../Url';
 import ReactLoading from 'react-loading';
 
 
@@ -18,7 +19,7 @@ export const Login = () => {
       e.preventDefault();
       try
       {
-      await fetch("http://127.0.0.1:5000/login",{
+      await fetch(`${deployurl}/login`,{
           method:"POST",
           body:JSON.stringify({
             EmailId:email,
