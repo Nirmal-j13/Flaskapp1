@@ -33,7 +33,7 @@ import urllib.request
 from werkzeug.utils import secure_filename
 #Frontend and Backend Connector
 app=Flask(__name__)
-CORS(app, support_credentials=True)
+CORS(app, resources={r"/*": {"origins": "https://flaskappbackend.vercel.app"}})
 
 
 #Data Cleaning of the  resume
