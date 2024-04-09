@@ -51,54 +51,6 @@ def extract_text_from_pdf(pdf_path):
     text = extract_text(pdf_path)
     return text
 
-'''def extract_name(resume_text):
-        nlp_text = nlp(resume_text)
-        pattern = [{'POS': 'PROPN'}, {'POS': 'PROPN'}]
-        matcher.add('NAME',[pattern])
-        matches = matcher(nlp_text)
-        for match_id, start, end in matches:
-            span = nlp_text[start:end]
-            return span.text
-
-def extract_mobile_number(resume_text):
-    phone = re.findall('\d{2}\d{3}\d{5}',resume_text)
-    if phone:
-        number = ''.join(phone[0])
-        if len(number) > 10:
-            return 'NULL'
-        else:
-            return number
-
-def extract_email_addresses(string):
-    r = re.compile(r'[\w\.-]+@[\w\.-]+')
-    return r.findall(string)
-
-def extract_education(resume_text):
-    nlp_text = nlp(resume_text)
-
-    # Sentence Tokenizer
-    nlp_text = [sent.text.strip() for sent in nlp_text.sents]
-    
-
-    edu = {}
-    # Extract education degree
-    for index, text in enumerate(nlp_text):
-        for tex in text.split():
-            # Replace all special symbols
-            tex = re.sub(r'[?|$|.|!|,]', r'', tex)
-            if tex.upper() in EDUCATION and tex not in STOPWORDS:
-                edu[tex] = text + nlp_text[index + 1]
-                
-    # Extract year
-    education = []
-    for key in edu.keys():
-        year = re.search(re.compile(r'(((20|19)(\d{})))'), edu[key])
-        if year:
-            education.append((key, ''.join(year[0])))
-        else:
-            education.append(key)
-    return education
-'''
 def cos_compute(text1,text2):
         content =[text2,text1]
         countVector= CountVectorizer()
@@ -117,10 +69,10 @@ try:
     print(df.head())
 
     #Plot for the  no of skills in the resume 
-    plt.figure(figsize=(15,5))
+    '''plt.figure(figsize=(15,5))
     sns.countplot(df['Category'])
     plt.xticks(rotation=90)
-    plt.show()
+    plt.show()'''
 
     #words into categorical values
     le = LabelEncoder()
@@ -150,7 +102,7 @@ try:
     print("\n",classification_rep)
 
     #Confusion Matrix
-    actual = y_test
+    '''actual = y_test
     predicted = y_pred
     cm = confusion_matrix(actual,predicted)
     sns.heatmap(cm,
@@ -161,7 +113,7 @@ try:
     plt.ylabel('Prediction', fontsize=13)
     plt.xlabel('Actual', fontsize=13)
     plt.title('Confusion Matrix', fontsize=17)
-    plt.show()
+    plt.show()'''
     #Prediction System
     pickle.dump(tfidf,open('tfidf.pkl','wb'))
     pickle.dump(clf, open('clf.pkl', 'wb'))
