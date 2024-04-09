@@ -13,11 +13,15 @@ import re
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
-
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.multiclass import OneVsRestClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score , classification_report
+from sklearn.metrics import confusion_matrix, classification_report
 import pickle
-import spacyfrom spacy.matcher import Matcher
+import spacy
+import en_core_web_sm
+from spacy.matcher import Matcher
 import docx2txt
 from pdfminer.high_level import extract_text
 from nltk.corpus import stopwords
@@ -25,6 +29,7 @@ import locationtagger
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import os
+import urllib.request
 from werkzeug.utils import secure_filename
 #Frontend and Backend Connector
 app=Flask(__name__)
