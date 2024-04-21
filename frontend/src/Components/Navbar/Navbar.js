@@ -94,6 +94,11 @@ export const Navbar = () => {
                 Signup
             </h4>
            </Link>
+           <Link to='/applyjob' smooth={true} duration={500} className='Navbar-job'>
+            <h4>
+                <b>A</b>pply<b>J</b>ob
+            </h4>
+           </Link>
            </div>   
          </div>
          <div className='home-bg'>
@@ -103,7 +108,7 @@ export const Navbar = () => {
 
               <p className='home-heading-1'>The Accuracy and Parsing denotes Strength Quality of the Resume</p>
               <p className='home-heading-2'>
-                ParseProsX.com is one of the best smart Intelligent platform for analysing the individual resume strength 
+                <b>ParseProsX.com</b> is one of the best smart Intelligent platform for analysing the individual resume strength 
                 and predicting the resume category based on various aspect of skills. It have Provided the accuracy rate of 
                 99.67% in training datas and 67.64% in testing datas which have been developed by using the <b>Random Forest
                 Classifier Algorithm.</b>  

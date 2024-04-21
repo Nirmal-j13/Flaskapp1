@@ -4,7 +4,7 @@ import logo from '../Asset/logo.png'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-import { deployurl } from '../Url';
+import { deployurl, localhosturl } from '../Url';
 import ReactLoading from 'react-loading';
 
 
@@ -19,7 +19,7 @@ export const Login = () => {
       e.preventDefault();
       try
       {
-      await fetch(`https://flaskappbackend.vercel.app/login`,{
+      await fetch(`${localhosturl}/login`,{
           method:"POST",
           body:JSON.stringify({
             EmailId:email,
@@ -96,7 +96,9 @@ export const Login = () => {
                  <div className='sigin-aa'>
 
                       <p  style={{fontSize:"13px"}}onClick={()=>{
-                            navigate('/signup')
+                         setInterval(()=>{
+                          navigate('/signup')
+                         },3000)
                       }}>New User</p>
                  </div>
                  <button className='signup-link' onClick={OnHandleSubmit} >

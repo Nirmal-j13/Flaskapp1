@@ -61,7 +61,7 @@ export const Register = () => {
          )
         }).then(()=>{
           setInterval(()=>{
-            navigate('/login');
+            navigate('/signin');
            },3000)
         })
       }
@@ -124,7 +124,7 @@ export const Register = () => {
                       <p onClick={()=>{
                          setInterval(()=>{
                             navigate('/signin')
-                         },1000)
+                         },3000)
                       }}>Already have an Account</p>
                     </small>
                  </div>
